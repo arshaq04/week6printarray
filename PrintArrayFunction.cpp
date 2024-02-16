@@ -3,14 +3,21 @@
 
 using namespace std;
 
-int main() {
-    vector<int> nums;
-    cout << "Print Array Function" << endl;
-    int Print_Array = nums[0];
-
-    if (nums[] <= [3]) {
-        cout << "[";
-        
+void print_array(int arrayF[], int size) {
+    cout << "[";
+    for (int i = 0; i < size; i++) {
+        cout << arrayF[i];
+        if (i < size - 1) {
+            cout << ", ";
+        }
     }
+    cout << "]";
+}
+    
+int main() {
+    int numbers[] = {1, 2, 3};    
+    print_array(numbers, 3);
+    // will produce the output: [1, 2, 3]
+    
     return 0;
 }
